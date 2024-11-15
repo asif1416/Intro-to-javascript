@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>document</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+  <body>
+      <script>
+          // variables with different types
+          var stringVar = "Hello, World!"; // String
+          var numberVar = 42; // Number
+          var booleanVar = true; // Boolean
+          var arrayVar = [1, 2, 3, 4]; // Array
+          var objectVar = { name: "John", age: 30 }; // Object
+          var nullVar = null; // Null
+          var undefinedVar; // Undefined
+
+          document.write("String: " + stringVar + " (Type: " + typeof stringVar + ")<br>");
+          document.write("Number: " + numberVar + " (Type: " + typeof numberVar + ")<br>");
+          document.write("Boolean: " + booleanVar + " (Type: " + typeof booleanVar + ")<br>");
+          document.write("Array: " + arrayVar + " (Type: " + typeof arrayVar + ")<br>");
+          document.write("Object: " + JSON.stringify(objectVar) + " (Type: " + typeof objectVar + ")<br>");
+          document.write("Null: " + nullVar + " (Type: " + typeof nullVar + ")<br>");
+          document.write("Undefined: " + undefinedVar + " (Type: " + typeof undefinedVar + ")<br>");
+      </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>document</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+  <body>
+      <p>Demonstrating parameters and optional parameters in a function.</p>
+      <p id="demo1"></p>
+      <p id="demo2"></p>
+      <script>
+        
+          function greet(name, greeting = "Hello") {
+              return greeting + ", " + name + "!";
+          }
+
+          document.getElementById("demo1").innerHTML = greet("Asif", "Hi");
+
+          document.getElementById("demo2").innerHTML = greet("Israt");
+      </script>
+  </body>
+
+</html>

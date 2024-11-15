@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>document</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+  <body>
+    <button onclick="multiply(4, 3)">Click Me!</button>
+    <p id="result"></p>
+
+    <script>
+      function multiply(a, b) {
+        var result = a * b;
+        document.getElementById("result").innerHTML = result;
+      }
+    </script>
+  </body>
+
+</html>

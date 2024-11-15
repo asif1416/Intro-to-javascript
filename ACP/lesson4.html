@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>document</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+  <body>
+
+    <p>Sum of arguments and Math objects</p>
+    <p id="demo"></p>
+
+    <script>
+      function sumAll(...args) {
+        return args.reduce((sum, num) => sum + num, 0);
+      }
+
+      document.getElementById("demo").innerHTML = sumAll(78, 75, 45, 79, 25, 101, 99);
+
+      // Using radians for trigonometric functions
+      const angleInDegrees = 45;
+      const angleInRadians = (angleInDegrees * Math.PI) / 180;
+
+      document.write("Sin 45° is: " + Math.sin(angleInRadians) + "<br>");
+      document.write("Cos 45° is: " + Math.cos(angleInRadians) + "<br>");
+      document.write("Tan 45° is: " + Math.tan(angleInRadians) + "<br>");
+    </script>
+
+  </body>
+
+</html>

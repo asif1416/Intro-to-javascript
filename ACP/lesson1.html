@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>document</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+  <body>
+
+    <h1>Simple Calculator</h1>
+    <p id="add"></p>
+    <p id="sub"></p>
+    <p id="mul"></p>
+    <p id="div"></p>
+
+    <script>
+      var num1 = 5;
+      var num2 = 3;
+      var add = num1 + num2;
+      var sub = num1 - num2;
+      var mul = num1 * num2;
+      var div = num1 / num2;
+      document.getElementById("add").innerHTML =
+      "The added value is: " + add;
+      document.getElementById("sub").innerHTML =
+      "The subtracted value is: " + sub;
+      document.getElementById("mul").innerHTML =
+      "The multiplied value is: " + mul;
+      document.getElementById("div").innerHTML =
+      "The divided value is: " + div;
+
+    </script>
+
+  </body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>document</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+  <body>
+
+  <h2>JavaScript Math Examples</h2>
+
+  <p>Math.round(x) returns the value of x rounded to its nearest integer:</p>
+  <p id="round"></p>
+
+  <p>Math.ceil(x) returns the value of x rounded up to the nearest integer:</p>
+  <p id="ceil"></p>
+
+  <p>Math.floor(x) returns the value of x rounded down to the nearest integer:</p>
+  <p id="floor"></p>
+
+  <p>Math.max(x, y, z, ...) returns the largest of the given numbers:</p>
+  <p id="max"></p>
+
+  <p>Math.min(x, y, z, ...) returns the smallest of the given numbers:</p>
+  <p id="min"></p>
+
+  <p>Math.random() returns a random number between 0 (inclusive) and 1 (exclusive):</p>
+  <p id="random"></p>
+
+  <script>
+  document.getElementById("round").innerHTML = Math.round(4.4); 
+  document.getElementById("ceil").innerHTML = Math.ceil(4.4); 
+  document.getElementById("floor").innerHTML = Math.floor(4.4);
+  document.getElementById("max").innerHTML = Math.max(1, 2, 3, 4, 5); 
+  document.getElementById("min").innerHTML = Math.min(1, 2, 3, 4, 5); 
+  document.getElementById("random").innerHTML = Math.random(); 
+  </script>
+
+  </body>
+
+</html>
